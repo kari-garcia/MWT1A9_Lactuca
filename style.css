@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 body {
     background-color: #FFF8E7;
-    margin: auto;
+    margin: 10px;
+    margin-top: 0%;
     margin-bottom: 0;
-    width: 90%;
 }
 
 header {
@@ -30,9 +30,30 @@ nav a:hover {
     color: #00E1FF;
 }
 
+.active {
+    color: #00E1FF;
+}
+
+.dot {
+    background-color: #00E1FF;
+    border-radius: 50%;
+    display: inline-block;
+    margin: auto 6px 3px auto;
+    height: 5px;
+    width: 5px;
+}
+
 .logo {
     margin: 3.5vh 7vw;
 }
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* INDEX */
 
 section {
     display: flex;
@@ -134,17 +155,24 @@ article img {
     min-height: 120px;
 }
 
-.testimonio {
+.testimonio,
+.name {
     margin-top: 5%;
 }
 
-.testimonial {
+.testimonial,
+.name {
     align-self: center;
     color: #004953;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4em;
     font-weight: 500;
     width: 75%;
+}
+
+.name {
+    left: auto;
+    top: auto;
 }
 
 article a {
@@ -161,10 +189,180 @@ article a {
     width: 30%;
 }
 
+
+/* NOSOTROS */
+
+.galery {
+    margin: auto;
+    margin-top: 20vh;
+}
+
+
+/*APRENDIZAJE*/
+
+.top {
+    position: relative;
+}
+
+.top img {
+    height: 60vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.top p {
+    color: #8FE100;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    left: 10%;
+    top: 40%;
+    position: absolute;
+    width: 35%;
+}
+
+h3 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.8em;
+    left: 10%;
+    top: 30%;
+    position: absolute;
+}
+
+.entrada-left {
+    align-items: center;
+    border-radius: 0px 13px 13px 0px;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.entrada-right {
+    align-items: center;
+    border-radius: 13px 0px 0px 13px;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.principiante {
+    background-color: #004953;
+}
+
+.intermedio {
+    background-color: #00E1FF;
+}
+
+.avanzado {
+    background-color: #8FE100;
+}
+
+.avanzado p {
+    color: #004953;
+}
+
+.nombre {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+.nivel {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.aprendizaje img {
+    border-radius: 10px 10px 0px 0px;
+    height: 50%;
+    margin-top: 30px;
+    object-fit: cover;
+    width: 70%;
+}
+
+
+/* CATALOGO */
+
+.productos {
+    background-color: #004953;
+    color: #FFF8E7;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+h5 {
+    height: 1.25rem;
+    width: 100%;
+}
+
+.producto {
+    border-radius: 10px;
+    height: 200px;
+    margin: 10px;
+    width: 18vw;
+}
+
+.producto img {
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+    width: 18vw;
+}
+
+.descripcion {
+    background-color: #FFF8E7;
+    border-radius: 10px;
+    top: 80%;
+    bottom: 0;
+    padding: 5px 10px 5px 10px;
+    position: relative;
+}
+
+.descripcion p {
+    margin: 5px;
+}
+
+.agregar {
+    text-align: end;
+}
+
+.produc-nombre {
+    color: #343A40;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.produc-descrip {
+    color: #343A40;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+/* FOOTER */
+
 footer {
     background-color: #E9A930;
     display: flex;
     height: auto;
+    padding: 20px;
     justify-content: space-around;
 }
 
@@ -179,7 +377,6 @@ footer p {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-left: 50%;
     width: 10%;
 }
 
@@ -201,4 +398,21 @@ footer .redes svg:hover {
     font-size: 12px;
     font-weight: 500;
     margin-top: 15px;
+}
+
+li a {
+    color: #FFF8E7;
+    text-decoration: none;
+}
+
+@media (min-width: 1400px) {
+    main {
+        width: 100%;
+        margin: 0;
+    }
+    /* Aprendizaje */
+    .top img {
+        height: 60vh;
+        object-fit: cover;
+    }
 }
